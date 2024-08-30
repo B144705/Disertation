@@ -9,7 +9,7 @@
 #$ -cwd
 #$ -l h_rt=48:00:00                              # Allocate a maximum of 48 hours to the job
 source /etc/profile.d/modules.sh
-export PATH="/gpfs/igmmfs01/eddie/sproul-lab/Gawain/tools:$PATH" #load the modkit tool
+export PATH="PATH/TO/MODKIT:$PATH" #load the modkit tool
 # Arguments:
 # $1: path to the modifiedbam file
 # $2: output path for tsv contain single read methylation information
