@@ -34,7 +34,7 @@ bulk_meth=#path to store the bulk methylation bedfile
 qlogin -pe interactivemem 32 -l h_vmem=2G # Request 16 core cpu
 export PATH="MODKIT/PATH:$PATH" #load the modkit tool
 modkit pileup --preset traditional --threads 32 --queue-size 1000000 --ref ${ref_genome} ${modified_bam} > ${bulk_out}
-#The –preset traditional setting in modkit pileup was used so that:
+#The â€“preset traditional setting in modkit pileup was used so that:
 # We only include reference CGs;
 # Only C and 5mC are reported rather than other modifications;
 # Data is aggregated across strands
